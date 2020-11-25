@@ -2,8 +2,8 @@
  * @Author: abc
  * @Date: 2020-11-03 11:50:42
  * @LastEditors: abc
- * @LastEditTime: 2020-11-09 23:03:17
- * @Description:t
+ * @LastEditTime: 2020-11-25 16:52:37
+ * @Description:按需引入ant design vue的UI组件
  */
 import Vue from 'vue';
 import {
@@ -14,7 +14,11 @@ import {
   FormModel,
   Input,
   Row,
-  Col
+  Col,
+  ConfigProvider,
+  Select,
+  Calendar,
+  Dropdown
 } from 'ant-design-vue';
 Vue.use(Button)
   .use(Input)
@@ -23,4 +27,8 @@ Vue.use(Button)
   .use(Menu)
   .use(FormModel)
   .use(Row)
-  .use(Col);
+  .use(Col)
+  .use(ConfigProvider)
+  .use(Select)
+  .use(Calendar)
+  .use(Dropdown);

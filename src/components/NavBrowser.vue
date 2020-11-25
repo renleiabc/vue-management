@@ -2,7 +2,7 @@
  * @Author: abc
  * @Date: 2020-11-06 10:51:35
  * @LastEditors: abc
- * @LastEditTime: 2020-11-10 14:50:44
+ * @LastEditTime: 2020-11-25 16:47:29
  * @Description: 
 -->
 <template>
@@ -18,7 +18,7 @@
       <a-menu-item v-if="!item.children" :key="String(item.meta.key)">
         <router-link :to="{ name: item.name }">
           <a-icon :type="item.meta.icon" />
-          <span>{{ item.meta.title }}</span>
+          <span>{{ $t(item.meta.title) }}</span>
         </router-link>
       </a-menu-item>
       <sub-menu v-else :key="String(item.meta.key)" :menu-info="item" />

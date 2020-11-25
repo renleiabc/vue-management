@@ -1,6 +1,13 @@
 {
   "home": "首页",
   "about": "关于",
+  "table": "表格",
   "charts": "图表",
-  "lang": "多語言"
+  "lang": "多語言",
+  "finance": "财务",
+  "statistics": "统计",
+  "brokenLine": "折线图",
+  "column": "柱形图",
+  "map": "地图",
+  "management": "后台管理系统"
 }

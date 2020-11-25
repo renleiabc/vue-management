@@ -1,6 +1,13 @@
 {
-  "home": "home",
-  "about": "about",
-  "charts": "charts",
-  "lang": "language"
+  "home": "Home",
+  "about": "About",
+  "charts": "Charts",
+  "lang": "Language",
+  "brokenLine": "Broken Line",
+  "column": "Column Charts",
+  "map": "Map",
+  "finance": "Finance",
+  "table": "Table",
+  "statistics": "Statistics",
+  "management": "management"
 }

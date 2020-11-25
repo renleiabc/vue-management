@@ -1,5 +1,13 @@
 {
   "home": "首頁",
   "about": "關於",
-  "charts": "圖表"
+  "table": "表格",
+  "lang": "多語言",
+  "charts": "圖表",
+  "statistics": "統計",
+  "finance": "财务",
+  "brokenLine": "折線圖",
+  "column": "柱形圖",
+  "map": "地圖",
+  "management": "後臺管理系統"
 }

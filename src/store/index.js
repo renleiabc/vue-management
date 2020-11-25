@@ -2,7 +2,7 @@
  * @Author: abc
  * @Date: 2020-11-03 10:54:28
  * @LastEditors: abc
- * @LastEditTime: 2020-11-10 12:09:26
+ * @LastEditTime: 2020-11-25 16:20:38
  * @Description:
  */
 import Vue from 'vue';
@@ -10,7 +10,7 @@ import Vuex from 'vuex';
 import routes from '../router/routes';
 import { handleRouterFilter } from '../assets/js/common';
 Vue.use(Vuex);
-
+const lang = localStorage.getItem('lang');
 export default new Vuex.Store({
   // store.js
   state: {
@@ -18,9 +18,13 @@ export default new Vuex.Store({
     auth: false,
     userInfo: {},
     route: {},
-    user: ''
+    user: '',
+    lang: lang || 'zh-cn'
   },
   mutations: {
+    changeLang(state, value) {
+      state.lang = value;
+    },
     setToken(state, account) {
       //console.log(state, account);
       state.token = account.token;
@@ -66,8 +70,12 @@ export default new Vuex.Store({
       console.log(state.route);
       const { route } = state;
       return route || {};
+    },
+    postLang(state) {
+      return state.lang;
     }
   }
+
   /*  async getUserInfo({ commit }, token) {
       return fetchUserInfo(token).then(response => {
         if (response.code === 200) {

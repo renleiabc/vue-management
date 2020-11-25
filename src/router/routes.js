@@ -2,7 +2,7 @@
  * @Author: abc
  * @Date: 2020-11-06 10:47:41
  * @LastEditors: abc
- * @LastEditTime: 2020-11-10 12:22:06
+ * @LastEditTime: 2020-11-25 16:37:21
  * @Description:页面路由
  */
 const routes = [
@@ -13,7 +13,7 @@ const routes = [
       import(/* webpackChunkName: "index" */ '../views/index.vue'),
     meta: {
       key: '1',
-      title: '首页',
+      title: 'home',
       icon: 'home',
       requireAuth: true,
       roles: ['admin', 'user', 'creator']
@@ -26,7 +26,7 @@ const routes = [
       import(/* webpackChunkName: "table" */ '../views/table/index.vue'),
     meta: {
       key: '2',
-      title: '表格管理',
+      title: 'table',
       icon: 'table',
       requireAuth: true,
       roles: ['user']
@@ -39,7 +39,7 @@ const routes = [
           import(/* webpackChunkName: "table" */ '../views/table/list.vue'),
         meta: {
           key: '2-1',
-          title: '统计表格',
+          title: 'statistics',
           icon: 'tablet',
           requireAuth: true,
           roles: ['user']
@@ -52,7 +52,7 @@ const routes = [
           import(/* webpackChunkName: "table" */ '../views/table/money.vue'),
         meta: {
           key: '2-2',
-          title: '财务表格',
+          title: 'finance',
           icon: 'money-collect',
           requireAuth: true,
           roles: ['user']
@@ -67,7 +67,7 @@ const routes = [
       import(/* webpackChunkName: "echarts" */ '../views/echarts/index.vue'),
     meta: {
       key: '3',
-      title: '图表管理',
+      title: 'charts',
       icon: 'pie-chart',
       requireAuth: true,
       roles: ['admin', 'user', 'creator']
@@ -80,7 +80,7 @@ const routes = [
           import(/* webpackChunkName: "echarts" */ '../views/echarts/bar.vue'),
         meta: {
           key: '3-1',
-          title: '柱形图',
+          title: 'column',
           icon: 'bar-chart',
           requireAuth: true,
           roles: ['admin', 'user', 'creator']
@@ -93,7 +93,7 @@ const routes = [
           import(/* webpackChunkName: "echarts" */ '../views/echarts/line.vue'),
         meta: {
           key: '3-2',
-          title: '折线图',
+          title: 'brokenLine',
           icon: 'line-chart',
           requireAuth: true,
           roles: ['admin', 'creator']
@@ -106,7 +106,7 @@ const routes = [
           import(/* webpackChunkName: "echarts" */ '../views/echarts/map.vue'),
         meta: {
           key: '3-3',
-          title: '地图',
+          title: 'map',
           icon: 'heat-map',
           requireAuth: true,
           roles: ['admin', 'creator']
@@ -121,7 +121,7 @@ const routes = [
       import(/* webpackChunkName: "lang" */ '../views/lang/index.vue'),
     meta: {
       key: '4',
-      title: '多语言',
+      title: 'lang',
       icon: 'medium',
       requireAuth: true,
       roles: ['admin', 'user']
@@ -134,7 +134,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ '../views/about/index.vue'),
     meta: {
       key: '5',
-      title: '关于我们',
+      title: 'about',
       icon: 'apple',
       requireAuth: true,
       roles: ['user', 'creator']
