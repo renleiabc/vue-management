@@ -2,7 +2,7 @@
  * @Author: abc
  * @Date: 2020-11-03 11:58:51
  * @LastEditors: abc
- * @LastEditTime: 2020-11-10 14:45:11
+ * @LastEditTime: 2020-11-26 11:08:25
  * @Description:
  */
 const path = require('path');
@@ -52,5 +52,15 @@ module.exports = {
         '@ant-design/icons/lib/dist$': resolve('./src/plugins/icons.js')
       }
     }
+  },
+  chainWebpack: config => {
+    const imagesRule = config.module.rule('images');
+    imagesRule
+      .use('image-webpack-loader')
+      .loader('image-webpack-loader')
+      .options({
+        bypassOnDebug: true
+      })
+      .end();
   }
 };
