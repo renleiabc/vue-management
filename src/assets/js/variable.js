@@ -2,11 +2,11 @@
  * @Author: abc
  * @Date: 2020-11-05 18:21:36
  * @LastEditors: abc
- * @LastEditTime: 2020-11-09 14:46:33
+ * @LastEditTime: 2020-11-27 17:28:39
  * @Description:主题色文件
  */
 module.exports = {
-  '@primary-color': '#1DA57A', // 全局主色
+  '@primary-color': 'red', // 全局主色
   '@link-color': '#1DA57A', // 链接色
   '@success-color': '#52c41a', // 成功色
   '@warning-color': '#faad14', // 警告色
